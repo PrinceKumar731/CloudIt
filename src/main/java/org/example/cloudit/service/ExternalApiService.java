@@ -61,7 +61,6 @@ public class ExternalApiService {
 
             } catch (Exception e) {
                 System.out.println("Status not found or deleted: " + photo.getPhotoId());
-                photoRepo.delete(photo);
             }
         });
 
