@@ -20,4 +20,5 @@ public class Folder {
     private String folderName;
 
     private long photoCount;
+    private String Status;
 }

@@ -13,6 +13,8 @@ public interface PhotoRepo extends JpaRepository<Photo,String> {
 
     List<Photo> findAllByOrderByCreatedAtDesc();
 
+    List<Photo> findByFolderNameOrderByCreatedAtDesc(String folderName);
+
     List<Photo> findAllByFolderNameOrderByCreatedAtDesc(String folderName);
 
     @Query("SELECT DISTINCT p.folderName FROM Photo p ORDER BY p.folderName ASC")
